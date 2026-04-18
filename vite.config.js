@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// If you plan to deploy to GitHub Pages under a repo (e.g. https://<user>.github.io/<repo>/)
-// set `base: '/<repo>/'` here or update before publishing.
 export default defineConfig({
-    // base: '/',
+    plugins: [react()],
+    base: '/my_portfolio/',
 })
